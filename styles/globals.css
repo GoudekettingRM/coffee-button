@@ -1,16 +1,98 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  border-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.buttonForm input[type='image'] {
+  margin-top: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5) inset;
+  transition: all 250ms ease-in-out;
+}
+
+.buttonForm input[type='image']:hover,
+.buttonForm input[type='image']:focus-visible,
+.buttonForm input[type='image']:focus {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.buttonForm input[type='image']:active {
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+@media (max-width: 768px) {
+  .buttonForm input[type='image'] {
+    background-color: hsl(0, 0%, 90%);
+    border: 2px solid #ccc;
+  }
 }
