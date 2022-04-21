@@ -103,9 +103,3 @@ const Footer = styled(Container)(() => ({
   display: 'flex',
   justifyContent: 'center',
 }));
-
-const buttonHover = css({
-  '&:hover,&:focus': {
-    backgroundColor: '#fafafa',
-  },
-});
