@@ -70,7 +70,7 @@ q:before {
 }
 
 .buttonForm input[type='image'] {
-  margin-top: 1rem;
+  margin-block: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
   padding: 0.5rem;
@@ -94,5 +94,11 @@ q:before {
   .buttonForm input[type='image'] {
     background-color: hsl(0, 0%, 90%);
     border: 2px solid #ccc;
+  }
+}
+
+@media (max-width: 420px) {
+  .buttonForm input[type='image'] {
+    max-width: 75vw;
   }
 }

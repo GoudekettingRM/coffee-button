@@ -96,6 +96,8 @@ const Main = styled('main')(() => ({
 const Form = styled('form')(() => ({
   width: 'fit-content',
   margin: 'auto',
+  display: 'grid',
+  placeItems: 'center',
 }));
 
 const Footer = styled(Container)(() => ({
