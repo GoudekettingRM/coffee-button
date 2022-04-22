@@ -3,6 +3,10 @@
 @import '@fontsource/roboto/500.css';
 @import '@fontsource/roboto/700.css';
 
+:root {
+  color-scheme: dark light;
+}
+
 *,
 *::before,
 *::after {
@@ -100,5 +104,14 @@ q:before {
 @media (max-width: 420px) {
   .buttonForm input[type='image'] {
     max-width: 75vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #131313;
+  }
+  footer img {
+    filter: invert(1)
   }
 }

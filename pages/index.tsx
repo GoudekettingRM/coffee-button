@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Coffee for Robin</title>
         <meta name='description' content='Support your local developer!' />
+        <meta name='color-scheme' content='dark light' />
         <link rel='icon' href='/favicon.ico' />
         <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
@@ -45,38 +46,40 @@ const Home: NextPage = () => {
         </Typography>
       </Main>
 
-      <Footer>
-        <Stack direction='row' spacing={2}>
-          <Link
-            aria-label="Link to Robin's Github"
-            href='https://github.com/GoudekettingRM'
-            target='_blank'
-            rel='noopener noreferrer'>
-            <Image src={Github} width='32px' height='32px' alt='Github Logo' />
-          </Link>
-          <Link
-            aria-label="Link to Robin's LinkedIn"
-            href='https://www.linkedin.com/in/robinmgoudeketting/'
-            target='_blank'
-            rel='noopener noreferrer'>
-            <Image src={LinkedIn} width='32px' height='32px' alt='LinkedIn Logo' />
-          </Link>
-          <Link
-            aria-label="Link to Robin's Twitter"
-            href='https://twitter.com/RMGoudeketting'
-            target='_blank'
-            rel='noopener noreferrer'>
-            <Image src={Twitter} width='32px' height='32px' alt='Twitter Logo' />
-          </Link>
-          <Link
-            aria-label="Link to Robin's Dev Profile"
-            href='https://dev.to/goudekettingrm'
-            target='_blank'
-            rel='noopener noreferrer'>
-            <Image src={DevTo} width='32px' height='32px' alt='DevTo Logo' />
-          </Link>
-        </Stack>
-      </Footer>
+      <footer>
+        <Footer>
+          <Stack direction='row' spacing={2}>
+            <Link
+              aria-label="Link to Robin's Github"
+              href='https://github.com/GoudekettingRM'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <Image src={Github} width='32px' height='32px' alt='Github Logo' />
+            </Link>
+            <Link
+              aria-label="Link to Robin's LinkedIn"
+              href='https://www.linkedin.com/in/robinmgoudeketting/'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <Image src={LinkedIn} width='32px' height='32px' alt='LinkedIn Logo' />
+            </Link>
+            <Link
+              aria-label="Link to Robin's Twitter"
+              href='https://twitter.com/RMGoudeketting'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <Image src={Twitter} width='32px' height='32px' alt='Twitter Logo' />
+            </Link>
+            <Link
+              aria-label="Link to Robin's Dev Profile"
+              href='https://dev.to/goudekettingrm'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <Image src={DevTo} width='32px' height='32px' alt='DevTo Logo' />
+            </Link>
+          </Stack>
+        </Footer>
+      </footer>
     </WrapperBox>
   );
 };
@@ -90,6 +93,7 @@ const WrapperBox = styled(Box)(() => ({
 }));
 
 const Main = styled('main')(() => ({
+  marginTop: '2rem',
   flex: '1 0 auto',
 }));
 
